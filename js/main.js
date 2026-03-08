@@ -2,7 +2,8 @@ AOS.init({
     duration: 2000,
     disable: function () {
         return window.innerWidth < 1200;
-    }
+    },
+    once: true,
 });
 
 $(function () {
@@ -131,4 +132,5 @@ document.querySelectorAll('.gnb a').forEach(anchor => {
             behavior: 'smooth' // 부드럽게 이동
         });
     });
+
 });
